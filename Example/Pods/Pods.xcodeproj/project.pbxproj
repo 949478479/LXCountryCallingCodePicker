@@ -1,0 +1,933 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10E077222A3C44C7E5F81173DD795617 /* CallingCodes_en.json in Resources */ = {isa = PBXBuildFile; fileRef = B706D5B39311F0E61927F91DA92628F2 /* CallingCodes_en.json */; };
+		1C656098399B8A84512C1B1FA5863563 /* LXCountryCallingCodePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7BF2FC458CE2C1AEF6CA69A3E860A9CE /* LXCountryCallingCodePicker.bundle */; };
+		3376EE9D644CF6599A59575C9109C0D9 /* Pods-LXCountryCallingCodePicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F5EC0C210AE11D6DE9EB0AD24B45067 /* Pods-LXCountryCallingCodePicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D6A9EBB4243D6BACEFF3904A37A3DCF /* CallingCodePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A074E01EDF23913D2FD194A8AAF5A5F /* CallingCodePickerController.swift */; };
+		3E86F250E44C5367D8FC56D091A2D226 /* CallingCodeListDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89AE31A4C2BDDF344B683483D0A2BA3 /* CallingCodeListDataSourceProtocol.swift */; };
+		4FBDA2BFA645DA61AF08893092BEDCFF /* Pods-LXCountryCallingCodePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750B727FC969030F9E0491C457FE24B /* Pods-LXCountryCallingCodePicker_Example-dummy.m */; };
+		5526D89BBC83674E25FE640D0C9F11E5 /* SearchResultsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07B630B1CB221FAE75EA8719CB40E92 /* SearchResultsDataSource.swift */; };
+		5FE8AD2446754CB75E040E2BFDB1A45C /* CallingCodeListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4AD01016E741F75258F6C0E859C136 /* CallingCodeListViewController.swift */; };
+		6BA65C459309D527263B01B8148CE8A3 /* LXCountryCallingCodePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 135A283889839537B018C099BEB983D5 /* LXCountryCallingCodePicker-dummy.m */; };
+		6E6CCB41B5C364D0967518CAC2B5E93A /* LXCountryCallingCodePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 38E1B65CF5C82C5381BC9DD2531D5A01 /* LXCountryCallingCodePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6EFF844C57AB0CDD0C67EBD1DC1C27D6 /* CallingCodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B69C487BAFE663B6DE2C63F55BB7AA /* CallingCodeTableViewCell.swift */; };
+		73710E2EE3ECDCD5B6F2D04885C8DF2E /* CallingCodeMetadata_en.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AF2C37315020751F0ADF1B08D7222B /* CallingCodeMetadata_en.swift */; };
+		7A479C38DADAB4667CAC46977C5B93BB /* CallingCodeMetadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EF5120372D1205C5667FC3B4735F9A /* CallingCodeMetadata.swift */; };
+		7B4FF16B440BED8288A07A367BFE78AF /* CallingCodeMetadata_zh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3A3869168129E2CF13671E0BBA59CD /* CallingCodeMetadata_zh.swift */; };
+		864DA0EA70C22DBBCBEB7924A85C6FBC /* Pods-LXCountryCallingCodePicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D27F02AD07B296AFC480C56B79C3E7 /* Pods-LXCountryCallingCodePicker_Tests-dummy.m */; };
+		92EE41956A2C6A5105EB267E3ACD7670 /* Pods-LXCountryCallingCodePicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 221E4A422C3D26420DC62C6FB3A7543B /* Pods-LXCountryCallingCodePicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ED60BCD5B3867B1C86A97DBAF085FD9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AD75C7D2CB5B4F5EF6BE3213AF9FB3A4 /* CallingCodes_zh.json in Resources */ = {isa = PBXBuildFile; fileRef = D86C7E4FF013E39302E8603400E611A1 /* CallingCodes_zh.json */; };
+		B3CCD662A36A17013DB43A7AE574BB83 /* CallingCodePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C4FCAF0531E8E483E1C401A0527652 /* CallingCodePicker.storyboard */; };
+		BE4A09C4A016AA41666BEC5E4D28BC14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C37628D06A03A6F44FF2493E9F57FA39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		D014EC759BA6268F0F16AD70BD096253 /* CallingCodeListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4E333B706EA1CE4B24C7F292B86BD6 /* CallingCodeListDataSource.swift */; };
+		D440B88FC4DA06E19FCBA7A3667EBF88 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F068EAFF5B85E0ADEE8C840744B8F5D /* Language.swift */; };
+		DDC44D3492579A9C6A8FBB259AFD93AC /* CallingCodeMetadataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B89A55570699D06E331C25C056EEA19 /* CallingCodeMetadataStore.swift */; };
+		E9DFDE299A4B02CF9F98B35E91BD1ED6 /* icon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD267987A046772D63805065B74DC653 /* icon.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FE1E194F584BC18FAE59F72791E9399 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6779251C6F5455315D7866375B6F7BB5;
+			remoteInfo = "Pods-LXCountryCallingCodePicker_Example";
+		};
+		A14B82BABCB46F7A7516D8563B3F3B88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE2FD37BDFCBEDDE834CA353C1233571;
+			remoteInfo = "LXCountryCallingCodePicker-LXCountryCallingCodePicker";
+		};
+		DED6E5D932C228B4CCF21828D53C22D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71F91D21336D91701868A7F503826970;
+			remoteInfo = LXCountryCallingCodePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04165E60846E514D7DA642B770B217FC /* Pods-LXCountryCallingCodePicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LXCountryCallingCodePicker_Tests.modulemap"; sourceTree = "<group>"; };
+		0D3A3869168129E2CF13671E0BBA59CD /* CallingCodeMetadata_zh.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallingCodeMetadata_zh.swift; path = LXCountryCallingCodePicker/Classes/CallingCodeMetadata_zh.swift; sourceTree = "<group>"; };
+		135A283889839537B018C099BEB983D5 /* LXCountryCallingCodePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LXCountryCallingCodePicker-dummy.m"; sourceTree = "<group>"; };
+		221E4A422C3D26420DC62C6FB3A7543B /* Pods-LXCountryCallingCodePicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXCountryCallingCodePicker_Example-umbrella.h"; sourceTree = "<group>"; };
+		25EF5120372D1205C5667FC3B4735F9A /* CallingCodeMetadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallingCodeMetadata.swift; path = LXCountryCallingCodePicker/Classes/CallingCodeMetadata.swift; sourceTree = "<group>"; };
+		273BCE90341F538F6B7382AED74A1C51 /* Pods-LXCountryCallingCodePicker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXCountryCallingCodePicker_Example-Info.plist"; sourceTree = "<group>"; };
+		2750B727FC969030F9E0491C457FE24B /* Pods-LXCountryCallingCodePicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXCountryCallingCodePicker_Example-dummy.m"; sourceTree = "<group>"; };
+		27B69C487BAFE663B6DE2C63F55BB7AA /* CallingCodeTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallingCodeTableViewCell.swift; path = LXCountryCallingCodePicker/Classes/CallingCodeTableViewCell.swift; sourceTree = "<group>"; };
+		2B89A55570699D06E331C25C056EEA19 /* CallingCodeMetadataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallingCodeMetadataStore.swift; path = LXCountryCallingCodePicker/Classes/CallingCodeMetadataStore.swift; sourceTree = "<group>"; };
+		2E220D7DAA2FADD957A19EB10C601E8A /* Pods-LXCountryCallingCodePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXCountryCallingCodePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		35C4FCAF0531E8E483E1C401A0527652 /* CallingCodePicker.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = CallingCodePicker.storyboard; path = LXCountryCallingCodePicker/Assets/CallingCodePicker.storyboard; sourceTree = "<group>"; };
+		38551DA2ACC27EE2EC6AB7D7D8BBBBF1 /* LXCountryCallingCodePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXCountryCallingCodePicker-prefix.pch"; sourceTree = "<group>"; };
+		38E1B65CF5C82C5381BC9DD2531D5A01 /* LXCountryCallingCodePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LXCountryCallingCodePicker-umbrella.h"; sourceTree = "<group>"; };
+		3BC37B51F544A83C760D5F9E59072E46 /* LXCountryCallingCodePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LXCountryCallingCodePicker.framework; path = LXCountryCallingCodePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		454E4165D0A4C530B329B1A061A8545E /* Pods_LXCountryCallingCodePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LXCountryCallingCodePicker_Tests.framework; path = "Pods-LXCountryCallingCodePicker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47AF2C37315020751F0ADF1B08D7222B /* CallingCodeMetadata_en.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallingCodeMetadata_en.swift; path = LXCountryCallingCodePicker/Classes/CallingCodeMetadata_en.swift; sourceTree = "<group>"; };
+		4AE8427082F9429D0A0655F00D3B544A /* Pods-LXCountryCallingCodePicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXCountryCallingCodePicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4F068EAFF5B85E0ADEE8C840744B8F5D /* Language.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Language.swift; path = LXCountryCallingCodePicker/Classes/Language.swift; sourceTree = "<group>"; };
+		50170652125CD752C3C63FC86BAEA7E8 /* LXCountryCallingCodePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LXCountryCallingCodePicker.modulemap; sourceTree = "<group>"; };
+		5E8A680DA0425C71E8C9E508718737BD /* Pods-LXCountryCallingCodePicker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXCountryCallingCodePicker_Tests-Info.plist"; sourceTree = "<group>"; };
+		5FB22278A3132C5946B5E7845F388E8F /* Pods_LXCountryCallingCodePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LXCountryCallingCodePicker_Example.framework; path = "Pods-LXCountryCallingCodePicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6669B1F5E1D8AA9C165DC7E15BB4E4CF /* LXCountryCallingCodePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LXCountryCallingCodePicker-Info.plist"; sourceTree = "<group>"; };
+		68D27F02AD07B296AFC480C56B79C3E7 /* Pods-LXCountryCallingCodePicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LXCountryCallingCodePicker_Tests-dummy.m"; sourceTree = "<group>"; };
+		6F5EC0C210AE11D6DE9EB0AD24B45067 /* Pods-LXCountryCallingCodePicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LXCountryCallingCodePicker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7A074E01EDF23913D2FD194A8AAF5A5F /* CallingCodePickerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallingCodePickerController.swift; path = LXCountryCallingCodePicker/Classes/CallingCodePickerController.swift; sourceTree = "<group>"; };
+		7B4E333B706EA1CE4B24C7F292B86BD6 /* CallingCodeListDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallingCodeListDataSource.swift; path = LXCountryCallingCodePicker/Classes/CallingCodeListDataSource.swift; sourceTree = "<group>"; };
+		7BF2FC458CE2C1AEF6CA69A3E860A9CE /* LXCountryCallingCodePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = LXCountryCallingCodePicker.bundle; path = "LXCountryCallingCodePicker-LXCountryCallingCodePicker.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840FF6361973F1749E6615F6E8765985 /* LXCountryCallingCodePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LXCountryCallingCodePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		893FA375444BDE779DFF469ECFA63089 /* Pods-LXCountryCallingCodePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXCountryCallingCodePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8A78BE8972727C9F4E053A9CDCC2C5A4 /* Pods-LXCountryCallingCodePicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LXCountryCallingCodePicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8F7AC4FD4E8227A679E857B7D91213B8 /* Pods-LXCountryCallingCodePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXCountryCallingCodePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		90289EAD44F23F552E69482B03BC94AC /* ResourceBundle-LXCountryCallingCodePicker-LXCountryCallingCodePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LXCountryCallingCodePicker-LXCountryCallingCodePicker-Info.plist"; sourceTree = "<group>"; };
+		9991093F0B19071C3243E2271C9B41DE /* Pods-LXCountryCallingCodePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXCountryCallingCodePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AD1972AA643E917E82D986E6BCCD16DF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B51D61B275E2CCDA055374781189176A /* Pods-LXCountryCallingCodePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LXCountryCallingCodePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B69A3F3B11260928F86EB98DDBB44F03 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B706D5B39311F0E61927F91DA92628F2 /* CallingCodes_en.json */ = {isa = PBXFileReference; includeInIndex = 1; name = CallingCodes_en.json; path = LXCountryCallingCodePicker/Assets/CallingCodes_en.json; sourceTree = "<group>"; };
+		C15531360C87531A520E821F55D88367 /* Pods-LXCountryCallingCodePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LXCountryCallingCodePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C5DBD0A91CAFDEAB622C165DC61686F7 /* LXCountryCallingCodePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LXCountryCallingCodePicker.xcconfig; sourceTree = "<group>"; };
+		C89AE31A4C2BDDF344B683483D0A2BA3 /* CallingCodeListDataSourceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallingCodeListDataSourceProtocol.swift; path = LXCountryCallingCodePicker/Classes/CallingCodeListDataSourceProtocol.swift; sourceTree = "<group>"; };
+		CD267987A046772D63805065B74DC653 /* icon.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = icon.xcassets; path = LXCountryCallingCodePicker/Assets/icon.xcassets; sourceTree = "<group>"; };
+		D27959BF0B2ADA7C55260734EC253B92 /* Pods-LXCountryCallingCodePicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LXCountryCallingCodePicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D86C7E4FF013E39302E8603400E611A1 /* CallingCodes_zh.json */ = {isa = PBXFileReference; includeInIndex = 1; name = CallingCodes_zh.json; path = LXCountryCallingCodePicker/Assets/CallingCodes_zh.json; sourceTree = "<group>"; };
+		F07B630B1CB221FAE75EA8719CB40E92 /* SearchResultsDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchResultsDataSource.swift; path = LXCountryCallingCodePicker/Classes/SearchResultsDataSource.swift; sourceTree = "<group>"; };
+		F517EEF66C5B3641978381F1A5DFD6CD /* Pods-LXCountryCallingCodePicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LXCountryCallingCodePicker_Example.modulemap"; sourceTree = "<group>"; };
+		FA4AD01016E741F75258F6C0E859C136 /* CallingCodeListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallingCodeListViewController.swift; path = LXCountryCallingCodePicker/Classes/CallingCodeListViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100EE3139C587C92876041EC99F62319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3096F9FBCADF83E953C16EB345035DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED60BCD5B3867B1C86A97DBAF085FD9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8610A82DF6A02DE449A6D9EBAD15893A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C37628D06A03A6F44FF2493E9F57FA39 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8899888267E40C366CE8C4555873B7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4A09C4A016AA41666BEC5E4D28BC14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00A0BF9D261435A136168511DD1006EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35C4FCAF0531E8E483E1C401A0527652 /* CallingCodePicker.storyboard */,
+				B706D5B39311F0E61927F91DA92628F2 /* CallingCodes_en.json */,
+				D86C7E4FF013E39302E8603400E611A1 /* CallingCodes_zh.json */,
+				CD267987A046772D63805065B74DC653 /* icon.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1D6464B46324ACA177C1E007C99282A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BF2FC458CE2C1AEF6CA69A3E860A9CE /* LXCountryCallingCodePicker.bundle */,
+				3BC37B51F544A83C760D5F9E59072E46 /* LXCountryCallingCodePicker.framework */,
+				5FB22278A3132C5946B5E7845F388E8F /* Pods_LXCountryCallingCodePicker_Example.framework */,
+				454E4165D0A4C530B329B1A061A8545E /* Pods_LXCountryCallingCodePicker_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29181FE5A1524F77BDA264E84E1B7C8F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				50170652125CD752C3C63FC86BAEA7E8 /* LXCountryCallingCodePicker.modulemap */,
+				C5DBD0A91CAFDEAB622C165DC61686F7 /* LXCountryCallingCodePicker.xcconfig */,
+				135A283889839537B018C099BEB983D5 /* LXCountryCallingCodePicker-dummy.m */,
+				6669B1F5E1D8AA9C165DC7E15BB4E4CF /* LXCountryCallingCodePicker-Info.plist */,
+				38551DA2ACC27EE2EC6AB7D7D8BBBBF1 /* LXCountryCallingCodePicker-prefix.pch */,
+				38E1B65CF5C82C5381BC9DD2531D5A01 /* LXCountryCallingCodePicker-umbrella.h */,
+				90289EAD44F23F552E69482B03BC94AC /* ResourceBundle-LXCountryCallingCodePicker-LXCountryCallingCodePicker-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LXCountryCallingCodePicker";
+			sourceTree = "<group>";
+		};
+		50158FC1B966551F139191C40C36DE32 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6ABE117C84739473CF4D275845DF3D36 /* Pods-LXCountryCallingCodePicker_Example */,
+				DCC74C5C50783CB841D0E452035E8F6B /* Pods-LXCountryCallingCodePicker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6ABE117C84739473CF4D275845DF3D36 /* Pods-LXCountryCallingCodePicker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F517EEF66C5B3641978381F1A5DFD6CD /* Pods-LXCountryCallingCodePicker_Example.modulemap */,
+				8F7AC4FD4E8227A679E857B7D91213B8 /* Pods-LXCountryCallingCodePicker_Example-acknowledgements.markdown */,
+				8A78BE8972727C9F4E053A9CDCC2C5A4 /* Pods-LXCountryCallingCodePicker_Example-acknowledgements.plist */,
+				2750B727FC969030F9E0491C457FE24B /* Pods-LXCountryCallingCodePicker_Example-dummy.m */,
+				B51D61B275E2CCDA055374781189176A /* Pods-LXCountryCallingCodePicker_Example-frameworks.sh */,
+				273BCE90341F538F6B7382AED74A1C51 /* Pods-LXCountryCallingCodePicker_Example-Info.plist */,
+				221E4A422C3D26420DC62C6FB3A7543B /* Pods-LXCountryCallingCodePicker_Example-umbrella.h */,
+				9991093F0B19071C3243E2271C9B41DE /* Pods-LXCountryCallingCodePicker_Example.debug.xcconfig */,
+				2E220D7DAA2FADD957A19EB10C601E8A /* Pods-LXCountryCallingCodePicker_Example.release.xcconfig */,
+			);
+			name = "Pods-LXCountryCallingCodePicker_Example";
+			path = "Target Support Files/Pods-LXCountryCallingCodePicker_Example";
+			sourceTree = "<group>";
+		};
+		8D01B8EE09FA6B4DE147C1C410F51C0C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8635932A1D7E0364FC5BF23EA8A42CF /* LXCountryCallingCodePicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B8635932A1D7E0364FC5BF23EA8A42CF /* LXCountryCallingCodePicker */ = {
+			isa = PBXGroup;
+			children = (
+				7B4E333B706EA1CE4B24C7F292B86BD6 /* CallingCodeListDataSource.swift */,
+				C89AE31A4C2BDDF344B683483D0A2BA3 /* CallingCodeListDataSourceProtocol.swift */,
+				FA4AD01016E741F75258F6C0E859C136 /* CallingCodeListViewController.swift */,
+				25EF5120372D1205C5667FC3B4735F9A /* CallingCodeMetadata.swift */,
+				47AF2C37315020751F0ADF1B08D7222B /* CallingCodeMetadata_en.swift */,
+				0D3A3869168129E2CF13671E0BBA59CD /* CallingCodeMetadata_zh.swift */,
+				2B89A55570699D06E331C25C056EEA19 /* CallingCodeMetadataStore.swift */,
+				7A074E01EDF23913D2FD194A8AAF5A5F /* CallingCodePickerController.swift */,
+				27B69C487BAFE663B6DE2C63F55BB7AA /* CallingCodeTableViewCell.swift */,
+				4F068EAFF5B85E0ADEE8C840744B8F5D /* Language.swift */,
+				F07B630B1CB221FAE75EA8719CB40E92 /* SearchResultsDataSource.swift */,
+				CC51C41C870916ED824F16FA6BF6C0D6 /* Pod */,
+				00A0BF9D261435A136168511DD1006EC /* Resources */,
+				29181FE5A1524F77BDA264E84E1B7C8F /* Support Files */,
+			);
+			name = LXCountryCallingCodePicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CC51C41C870916ED824F16FA6BF6C0D6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				AD1972AA643E917E82D986E6BCCD16DF /* LICENSE */,
+				840FF6361973F1749E6615F6E8765985 /* LXCountryCallingCodePicker.podspec */,
+				B69A3F3B11260928F86EB98DDBB44F03 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				8D01B8EE09FA6B4DE147C1C410F51C0C /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1D6464B46324ACA177C1E007C99282A9 /* Products */,
+				50158FC1B966551F139191C40C36DE32 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCC74C5C50783CB841D0E452035E8F6B /* Pods-LXCountryCallingCodePicker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				04165E60846E514D7DA642B770B217FC /* Pods-LXCountryCallingCodePicker_Tests.modulemap */,
+				D27959BF0B2ADA7C55260734EC253B92 /* Pods-LXCountryCallingCodePicker_Tests-acknowledgements.markdown */,
+				4AE8427082F9429D0A0655F00D3B544A /* Pods-LXCountryCallingCodePicker_Tests-acknowledgements.plist */,
+				68D27F02AD07B296AFC480C56B79C3E7 /* Pods-LXCountryCallingCodePicker_Tests-dummy.m */,
+				5E8A680DA0425C71E8C9E508718737BD /* Pods-LXCountryCallingCodePicker_Tests-Info.plist */,
+				6F5EC0C210AE11D6DE9EB0AD24B45067 /* Pods-LXCountryCallingCodePicker_Tests-umbrella.h */,
+				C15531360C87531A520E821F55D88367 /* Pods-LXCountryCallingCodePicker_Tests.debug.xcconfig */,
+				893FA375444BDE779DFF469ECFA63089 /* Pods-LXCountryCallingCodePicker_Tests.release.xcconfig */,
+			);
+			name = "Pods-LXCountryCallingCodePicker_Tests";
+			path = "Target Support Files/Pods-LXCountryCallingCodePicker_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1A7164A682B6B8579B91C12B5A9C5235 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E6CCB41B5C364D0967518CAC2B5E93A /* LXCountryCallingCodePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A3BF9629A49FBB530E91D940B7A6C93 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3376EE9D644CF6599A59575C9109C0D9 /* Pods-LXCountryCallingCodePicker_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C04CDAB91DCB69DEB377BA866A1D83A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92EE41956A2C6A5105EB267E3ACD7670 /* Pods-LXCountryCallingCodePicker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6779251C6F5455315D7866375B6F7BB5 /* Pods-LXCountryCallingCodePicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC1E6C9751DBE9B61741CFA0B8E7E8B3 /* Build configuration list for PBXNativeTarget "Pods-LXCountryCallingCodePicker_Example" */;
+			buildPhases = (
+				C04CDAB91DCB69DEB377BA866A1D83A8 /* Headers */,
+				5EABCFC061EC2A432613FEC336AECF79 /* Sources */,
+				8610A82DF6A02DE449A6D9EBAD15893A /* Frameworks */,
+				132B55CEA53AE3042BF23EB138EB5618 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D88F4C651162DE74916BF3E33586AFA2 /* PBXTargetDependency */,
+			);
+			name = "Pods-LXCountryCallingCodePicker_Example";
+			productName = "Pods-LXCountryCallingCodePicker_Example";
+			productReference = 5FB22278A3132C5946B5E7845F388E8F /* Pods_LXCountryCallingCodePicker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		71F91D21336D91701868A7F503826970 /* LXCountryCallingCodePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C9D71DAC49ED8A39900E7CCCD27DCCE /* Build configuration list for PBXNativeTarget "LXCountryCallingCodePicker" */;
+			buildPhases = (
+				1A7164A682B6B8579B91C12B5A9C5235 /* Headers */,
+				BBA1074187E175BF84BBBF2123BC4FDD /* Sources */,
+				3096F9FBCADF83E953C16EB345035DB0 /* Frameworks */,
+				1018A985D2DABA8EB9702077E145D4C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D629624AD6129F98FABF674FEE8FE5E /* PBXTargetDependency */,
+			);
+			name = LXCountryCallingCodePicker;
+			productName = LXCountryCallingCodePicker;
+			productReference = 3BC37B51F544A83C760D5F9E59072E46 /* LXCountryCallingCodePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE2FD37BDFCBEDDE834CA353C1233571 /* LXCountryCallingCodePicker-LXCountryCallingCodePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A878607FD1F9CF6CC59CDCCB4F4808C /* Build configuration list for PBXNativeTarget "LXCountryCallingCodePicker-LXCountryCallingCodePicker" */;
+			buildPhases = (
+				43F34E685EA080B80687DFA5600EB77B /* Sources */,
+				100EE3139C587C92876041EC99F62319 /* Frameworks */,
+				D46C6FA7B709C86B536DF11183881962 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LXCountryCallingCodePicker-LXCountryCallingCodePicker";
+			productName = "LXCountryCallingCodePicker-LXCountryCallingCodePicker";
+			productReference = 7BF2FC458CE2C1AEF6CA69A3E860A9CE /* LXCountryCallingCodePicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DCA6AAE015E237090BAADC4739761C22 /* Pods-LXCountryCallingCodePicker_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64A3BA6DBDB49DDF66B942487AD466EE /* Build configuration list for PBXNativeTarget "Pods-LXCountryCallingCodePicker_Tests" */;
+			buildPhases = (
+				7A3BF9629A49FBB530E91D940B7A6C93 /* Headers */,
+				1CC83A292AA3707F937951D6206D848B /* Sources */,
+				F8899888267E40C366CE8C4555873B7C /* Frameworks */,
+				DE1FBC38B261F3D6F3F3AB4F6048761C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E63719F53DDE0FD8673F194F9406F1A /* PBXTargetDependency */,
+			);
+			name = "Pods-LXCountryCallingCodePicker_Tests";
+			productName = "Pods-LXCountryCallingCodePicker_Tests";
+			productReference = 454E4165D0A4C530B329B1A061A8545E /* Pods_LXCountryCallingCodePicker_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1D6464B46324ACA177C1E007C99282A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71F91D21336D91701868A7F503826970 /* LXCountryCallingCodePicker */,
+				CE2FD37BDFCBEDDE834CA353C1233571 /* LXCountryCallingCodePicker-LXCountryCallingCodePicker */,
+				6779251C6F5455315D7866375B6F7BB5 /* Pods-LXCountryCallingCodePicker_Example */,
+				DCA6AAE015E237090BAADC4739761C22 /* Pods-LXCountryCallingCodePicker_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1018A985D2DABA8EB9702077E145D4C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C656098399B8A84512C1B1FA5863563 /* LXCountryCallingCodePicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		132B55CEA53AE3042BF23EB138EB5618 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46C6FA7B709C86B536DF11183881962 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3CCD662A36A17013DB43A7AE574BB83 /* CallingCodePicker.storyboard in Resources */,
+				10E077222A3C44C7E5F81173DD795617 /* CallingCodes_en.json in Resources */,
+				AD75C7D2CB5B4F5EF6BE3213AF9FB3A4 /* CallingCodes_zh.json in Resources */,
+				E9DFDE299A4B02CF9F98B35E91BD1ED6 /* icon.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE1FBC38B261F3D6F3F3AB4F6048761C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CC83A292AA3707F937951D6206D848B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				864DA0EA70C22DBBCBEB7924A85C6FBC /* Pods-LXCountryCallingCodePicker_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43F34E685EA080B80687DFA5600EB77B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EABCFC061EC2A432613FEC336AECF79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FBDA2BFA645DA61AF08893092BEDCFF /* Pods-LXCountryCallingCodePicker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA1074187E175BF84BBBF2123BC4FDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D014EC759BA6268F0F16AD70BD096253 /* CallingCodeListDataSource.swift in Sources */,
+				3E86F250E44C5367D8FC56D091A2D226 /* CallingCodeListDataSourceProtocol.swift in Sources */,
+				5FE8AD2446754CB75E040E2BFDB1A45C /* CallingCodeListViewController.swift in Sources */,
+				7A479C38DADAB4667CAC46977C5B93BB /* CallingCodeMetadata.swift in Sources */,
+				73710E2EE3ECDCD5B6F2D04885C8DF2E /* CallingCodeMetadata_en.swift in Sources */,
+				7B4FF16B440BED8288A07A367BFE78AF /* CallingCodeMetadata_zh.swift in Sources */,
+				DDC44D3492579A9C6A8FBB259AFD93AC /* CallingCodeMetadataStore.swift in Sources */,
+				3D6A9EBB4243D6BACEFF3904A37A3DCF /* CallingCodePickerController.swift in Sources */,
+				6EFF844C57AB0CDD0C67EBD1DC1C27D6 /* CallingCodeTableViewCell.swift in Sources */,
+				D440B88FC4DA06E19FCBA7A3667EBF88 /* Language.swift in Sources */,
+				6BA65C459309D527263B01B8148CE8A3 /* LXCountryCallingCodePicker-dummy.m in Sources */,
+				5526D89BBC83674E25FE640D0C9F11E5 /* SearchResultsDataSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D629624AD6129F98FABF674FEE8FE5E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LXCountryCallingCodePicker-LXCountryCallingCodePicker";
+			target = CE2FD37BDFCBEDDE834CA353C1233571 /* LXCountryCallingCodePicker-LXCountryCallingCodePicker */;
+			targetProxy = A14B82BABCB46F7A7516D8563B3F3B88 /* PBXContainerItemProxy */;
+		};
+		2E63719F53DDE0FD8673F194F9406F1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LXCountryCallingCodePicker_Example";
+			target = 6779251C6F5455315D7866375B6F7BB5 /* Pods-LXCountryCallingCodePicker_Example */;
+			targetProxy = 4FE1E194F584BC18FAE59F72791E9399 /* PBXContainerItemProxy */;
+		};
+		D88F4C651162DE74916BF3E33586AFA2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LXCountryCallingCodePicker;
+			target = 71F91D21336D91701868A7F503826970 /* LXCountryCallingCodePicker */;
+			targetProxy = DED6E5D932C228B4CCF21828D53C22D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AD607FF371407BDCB27AC9BB4C219C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893FA375444BDE779DFF469ECFA63089 /* Pods-LXCountryCallingCodePicker_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LXCountryCallingCodePicker_Tests/Pods-LXCountryCallingCodePicker_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXCountryCallingCodePicker_Tests/Pods-LXCountryCallingCodePicker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4E9FBFA880F403D86BA0114D9C3C3C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9991093F0B19071C3243E2271C9B41DE /* Pods-LXCountryCallingCodePicker_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LXCountryCallingCodePicker_Example/Pods-LXCountryCallingCodePicker_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXCountryCallingCodePicker_Example/Pods-LXCountryCallingCodePicker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5BBB8FD924F9E406039EC38B8EE75794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5DBD0A91CAFDEAB622C165DC61686F7 /* LXCountryCallingCodePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LXCountryCallingCodePicker/LXCountryCallingCodePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXCountryCallingCodePicker/LXCountryCallingCodePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LXCountryCallingCodePicker/LXCountryCallingCodePicker.modulemap";
+				PRODUCT_MODULE_NAME = LXCountryCallingCodePicker;
+				PRODUCT_NAME = LXCountryCallingCodePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		75D219F359700EFC94854D56A7A33705 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E220D7DAA2FADD957A19EB10C601E8A /* Pods-LXCountryCallingCodePicker_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LXCountryCallingCodePicker_Example/Pods-LXCountryCallingCodePicker_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXCountryCallingCodePicker_Example/Pods-LXCountryCallingCodePicker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		76105C4453BB078EF279ABA4B136CAD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5DBD0A91CAFDEAB622C165DC61686F7 /* LXCountryCallingCodePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LXCountryCallingCodePicker";
+				INFOPLIST_FILE = "Target Support Files/LXCountryCallingCodePicker/ResourceBundle-LXCountryCallingCodePicker-LXCountryCallingCodePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LXCountryCallingCodePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E837E031E7E5B2CD08FF0A972BD6E6F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5DBD0A91CAFDEAB622C165DC61686F7 /* LXCountryCallingCodePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LXCountryCallingCodePicker/LXCountryCallingCodePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LXCountryCallingCodePicker/LXCountryCallingCodePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LXCountryCallingCodePicker/LXCountryCallingCodePicker.modulemap";
+				PRODUCT_MODULE_NAME = LXCountryCallingCodePicker;
+				PRODUCT_NAME = LXCountryCallingCodePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7F10331714E812B533F0995D1A279DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5DBD0A91CAFDEAB622C165DC61686F7 /* LXCountryCallingCodePicker.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LXCountryCallingCodePicker";
+				INFOPLIST_FILE = "Target Support Files/LXCountryCallingCodePicker/ResourceBundle-LXCountryCallingCodePicker-LXCountryCallingCodePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LXCountryCallingCodePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F9B58C6C768C63B3028FDA6227163110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C15531360C87531A520E821F55D88367 /* Pods-LXCountryCallingCodePicker_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LXCountryCallingCodePicker_Tests/Pods-LXCountryCallingCodePicker_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LXCountryCallingCodePicker_Tests/Pods-LXCountryCallingCodePicker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
+				B0087CB4594321EF41619F3181FE120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64A3BA6DBDB49DDF66B942487AD466EE /* Build configuration list for PBXNativeTarget "Pods-LXCountryCallingCodePicker_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9B58C6C768C63B3028FDA6227163110 /* Debug */,
+				2AD607FF371407BDCB27AC9BB4C219C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C9D71DAC49ED8A39900E7CCCD27DCCE /* Build configuration list for PBXNativeTarget "LXCountryCallingCodePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BBB8FD924F9E406039EC38B8EE75794 /* Debug */,
+				E837E031E7E5B2CD08FF0A972BD6E6F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A878607FD1F9CF6CC59CDCCB4F4808C /* Build configuration list for PBXNativeTarget "LXCountryCallingCodePicker-LXCountryCallingCodePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7F10331714E812B533F0995D1A279DB /* Debug */,
+				76105C4453BB078EF279ABA4B136CAD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC1E6C9751DBE9B61741CFA0B8E7E8B3 /* Build configuration list for PBXNativeTarget "Pods-LXCountryCallingCodePicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E9FBFA880F403D86BA0114D9C3C3C7F /* Debug */,
+				75D219F359700EFC94854D56A7A33705 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

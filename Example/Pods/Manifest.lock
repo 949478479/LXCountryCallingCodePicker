@@ -1,0 +1,16 @@
+PODS:
+  - LXCountryCallingCodePicker (0.1.0)
+
+DEPENDENCIES:
+  - LXCountryCallingCodePicker (from `../`)
+
+EXTERNAL SOURCES:
+  LXCountryCallingCodePicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LXCountryCallingCodePicker: 8be89cfc8b283f8650ea0b1419be67b7e0dca6a2
+
+PODFILE CHECKSUM: 10065665f4a1237d96ff64e79363b1cb544e78e9
+
+COCOAPODS: 1.7.0

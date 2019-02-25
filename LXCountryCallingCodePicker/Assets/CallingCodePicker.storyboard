@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sgX-WA-iS2">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--国际区号-->
+        <scene sceneID="3yj-RF-0VX">
+            <objects>
+                <tableViewController id="sgX-WA-iS2" customClass="CallingCodeListViewController" customModule="LXCountryCallingCodePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="QR0-fK-GfO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableFooterView" hidden="YES" contentMode="scaleToFill" id="c78-DS-g6N" userLabel="Footer View">
+                            <rect key="frame" x="0.0" y="72" width="414" height="0.0"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CallingCodeTableViewCell" id="97z-0K-IcY" customClass="CallingCodeTableViewCell" customModule="LXCountryCallingCodePicker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="97z-0K-IcY" id="z85-Xi-u6s">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="🇨🇳 中国" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9iV-vu-BFS">
+                                            <rect key="frame" x="15" y="11.5" width="62.5" height="20.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="+86" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U9m-8L-0lv">
+                                            <rect key="frame" x="367" y="11.5" width="32" height="20.5"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.46274509800000002" green="0.49019607840000001" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="9iV-vu-BFS" firstAttribute="leading" secondItem="z85-Xi-u6s" secondAttribute="leading" constant="15" id="6YC-yO-aNq"/>
+                                        <constraint firstItem="U9m-8L-0lv" firstAttribute="centerY" secondItem="z85-Xi-u6s" secondAttribute="centerY" id="DJY-g0-HuS"/>
+                                        <constraint firstAttribute="trailing" secondItem="U9m-8L-0lv" secondAttribute="trailing" constant="15" id="cd6-g8-1RV"/>
+                                        <constraint firstItem="9iV-vu-BFS" firstAttribute="centerY" secondItem="z85-Xi-u6s" secondAttribute="centerY" id="j2E-nv-1dy"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="codeLabel" destination="U9m-8L-0lv" id="gVP-xZ-5vH"/>
+                                    <outlet property="countryLabel" destination="9iV-vu-BFS" id="GtF-eG-PXb"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7s5-BG-1nw" id="RBf-os-HnP"/>
+                            <outlet property="delegate" destination="sgX-WA-iS2" id="6O7-h9-Fqy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="国际区号" id="gk6-8g-P5n">
+                        <barButtonItem key="leftBarButtonItem" image="close" id="FXx-mY-qKJ">
+                            <connections>
+                                <segue destination="ph1-5e-xk2" kind="unwind" unwindAction="unwindFor:" id="d8a-nD-1uD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dataSource" destination="7s5-BG-1nw" id="GOB-dx-gp7"/>
+                        <outlet property="noResultLabel" destination="7nB-UY-pvE" id="TOX-ay-SEY"/>
+                        <outlet property="searchResultsDataSource" destination="WRv-H3-1ln" id="Ndt-vq-2on"/>
+                    </connections>
+                </tableViewController>
+                <customObject id="WRv-H3-1ln" customClass="SearchResultsDataSource" customModule="LXCountryCallingCodePicker" customModuleProvider="target"/>
+                <customObject id="7s5-BG-1nw" customClass="CallingCodeListDataSource" customModule="LXCountryCallingCodePicker" customModuleProvider="target"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bW4-PW-7Ig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ph1-5e-xk2" userLabel="Exit" sceneMemberID="exit"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无结果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7nB-UY-pvE">
+                    <rect key="frame" x="0.0" y="0.0" width="76" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </objects>
+            <point key="canvasLocation" x="1666" y="12"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close" width="24" height="24"/>
+    </resources>
+</document>

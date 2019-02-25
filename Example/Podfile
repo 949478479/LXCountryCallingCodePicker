@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LXCountryCallingCodePicker_Example' do
+  pod 'LXCountryCallingCodePicker', :path => '../'
+
+  target 'LXCountryCallingCodePicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
